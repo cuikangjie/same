@@ -1,0 +1,40 @@
+{
+  "name": "customer_system",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "kin <cuikangjie_90h@126.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.2.1",
+    "muse-ui": "^2.0.3",
+    "vuex": "^2.3.1",
+    "vue-router":"^2.5.3",
+    "vue-material":"",
+    "vue-aplayer":"",
+    "vue-progressive-image":""
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-latest": "^6.0.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "element-theme-default": "^1.3.0-beta.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "",
+    "style-loader": "^0.16.1",
+    "vue-loader": "^11.1.4",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0",
+    "babel-plugin-component":"^0.9.1",
+    "ip":"^1.1.5"
+  }
+}
