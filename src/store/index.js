@@ -13,7 +13,12 @@ Vue.use(Vuex)
 
 const state = {
 	detailData:{},
-	searchRs:{}
+	sensesData:{},
+	searchRs:{},
+	userId:14292602,
+	userInfo:{},
+	userSenses:{},
+	userChannelData:{}
 }
 
 export default new Vuex.Store({

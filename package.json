@@ -15,7 +15,9 @@
     "vue-router":"^2.5.3",
     "vue-material":"",
     "vue-aplayer":"",
-    "vue-progressive-image":""
+    "vue-progressive-image":"",
+    "vue-lazyload":"",
+    "vue-dplayer":""
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

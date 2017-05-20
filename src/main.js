@@ -4,14 +4,26 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 
-import VueProgressiveImage from 'vue-progressive-image'
 
-Vue.use(VueProgressiveImage)
 
-import MuseUI from 'muse-ui'
-import 'muse-ui/dist/muse-ui.css'
+import VueLazyload from 'vue-lazyload'
 
-Vue.use(MuseUI)
+Vue.use(VueLazyload)
+
+// or with options
+Vue.use(VueLazyload, {
+    preLoad: 1.3,
+
+    attempt: 1
+})
+
+
+
+import * as filters from './filters'
+
+Object.keys(filters).forEach(key => {
+    Vue.filter(key, filters[key])
+})
 
 var VueMaterial = require('vue-material')
 import 'vue-material/dist/vue-material.css'
@@ -22,5 +34,6 @@ new Vue({
     el: '#app',
     render: h => h(App),
     store,
-    router
+    router,
+    
 })

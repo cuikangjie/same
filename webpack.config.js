@@ -61,7 +61,7 @@ module.exports = {
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map',
+
     devServer: {
         contentBase: path.join(__dirname, "dist/"),
         compress: true,
@@ -96,7 +96,8 @@ module.exports = {
     ]
 }
 if (process.env.NODE_ENV === 'development') {
-
+  // devtool: '#eval-source-map',
+module.exports.devtool = '##eval-source-map'
     module.exports.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
             'process.env': {
@@ -106,7 +107,7 @@ if (process.env.NODE_ENV === 'development') {
     ])
 }
 if (process.env.NODE_ENV === 'production') {
-    module.exports.devtool = '#source-map'
+    // module.exports.devtool = '#source-map'
 
     module.exports.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
