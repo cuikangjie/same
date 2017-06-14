@@ -17,7 +17,9 @@
     "vue-aplayer":"",
     "vue-progressive-image":"",
     "vue-lazyload":"",
-    "vue-dplayer":""
+    "vue-dplayer":"",
+    "whatwg-fetch":"",
+    "es6-promise":"^4.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

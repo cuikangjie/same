@@ -60,6 +60,19 @@ import {
     saveStorage,
     getStorage
 } from '../util/index.js'
+
+function setTitle (title) {
+
+  let str = ''
+
+  if (title) {
+    str = title + ' -same'
+  } else {
+    str = 'same'
+  }
+  document.title = str
+
+}
 export default {
     data() {
         return {
@@ -70,6 +83,7 @@ export default {
         }
     },
     mounted() {
+      setTitle('频道搜索')
         this.likePD = getStorage('likePD');
         this.likeUser = getStorage('likeUser');
 

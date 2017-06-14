@@ -10,7 +10,7 @@ module.exports = {
             'vue',
             'vuex'
         ],
-        app: ['./src/main.js']
+        app: ["es6-promise/dist/es6-promise.auto.js", 'whatwg-fetch','./src/main.js']
     },
     output: {
         path: path.resolve(__dirname, './dist'),

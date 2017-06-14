@@ -40,11 +40,25 @@ export function search({
     })
 
 }
+
+function setTitle (title) {
+
+  let str = ''
+
+  if (title) {
+    str = title + ' -same'
+  } else {
+    str = 'same'
+  }
+  document.title = str
+
+}
 // 频道详情
 export function getChannelDetail({
     commit
 }, id) {
     getChannelDetailApi(id).then(data => {
+        setTitle(data.name)
         commit(UPDATE_DETAILDATA, data)
     })
 }
@@ -80,6 +94,7 @@ export function getUserSenses({
     state
 }) {
     getUserSensesApi(state.userId).then((value) => {
+      setTitle(value.results[0].user.username)
         commit(UPDATE_USERSENSES, value)
     })
 }
